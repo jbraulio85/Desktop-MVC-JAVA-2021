@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="348.0" prefWidth="537.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.CarreraTecnicaController">
+   <children>
+      <TableView fx:id="tblCarreraTecnica" layoutX="25.0" layoutY="64.0" prefHeight="251.0" prefWidth="414.0">
+        <columns>
+          <TableColumn fx:id="colCarreraTecnica" prefWidth="391.0" text="Carrera Técnica" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="474.0" layoutY="26.0" onMouseClicked="#mostrarVentanaCarreraTecnicaCU" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/plus.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="474.0" layoutY="61.0" text="Nuevo" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="476.0" layoutY="86.0" onMouseClicked="#mostrarVentanaCarreraTecnicaUpdate" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/edit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="476.0" layoutY="121.0" text="Editar" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="474.0" layoutY="148.0" onMouseClicked="#eliminarCarrera" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/delete.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="472.0" layoutY="181.0" text="Eliminar" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="474.0" layoutY="208.0" onMouseClicked="#generarReporte" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/document.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="470.0" layoutY="243.0" text="Reporte" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="476.0" layoutY="265.0" onMouseClicked="#regresar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/atras.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="468.0" layoutY="300.0" text="Regresar" />
+      <ImageView fitHeight="8.0" fitWidth="436.0" layoutX="14.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/barra.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="18.0" prefHeight="24.0" prefWidth="210.0" text="Carreras Disponibles">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

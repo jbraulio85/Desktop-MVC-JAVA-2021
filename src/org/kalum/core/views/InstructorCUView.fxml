@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="341.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.InstructorCUController">
+   <children>
+      <Label layoutX="51.0" layoutY="53.0" text="Id" />
+      <Label layoutX="48.0" layoutY="88.0" text="Apellidos" />
+      <Label layoutX="48.0" layoutY="125.0" text="Nombres" />
+      <TextField fx:id="txtId" layoutX="119.0" layoutY="49.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField fx:id="txtApellidos" layoutX="119.0" layoutY="84.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField fx:id="txtNombres" layoutX="119.0" layoutY="121.0" prefHeight="25.0" prefWidth="213.0" />
+      <Label layoutX="51.0" layoutY="164.0" text="Dirección" />
+      <Label layoutX="48.0" layoutY="199.0" text="Teléfono" />
+      <Label layoutX="48.0" layoutY="236.0" text="Estatus" />
+      <TextField fx:id="txtDireccion" layoutX="119.0" layoutY="160.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField fx:id="txtTelefono" layoutX="119.0" layoutY="195.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField fx:id="txtEstatus" layoutX="119.0" layoutY="232.0" prefHeight="25.0" prefWidth="213.0" />
+      <Label layoutX="361.0" layoutY="80.0" text="Foto" />
+      <Label layoutX="348.0" layoutY="201.0" text="Comentario" />
+      <TextField fx:id="txtFoto" layoutX="420.0" layoutY="46.0" prefHeight="95.0" prefWidth="180.0" />
+      <Button layoutX="510.0" layoutY="282.0" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+      <Button layoutX="430.0" layoutY="282.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+      <TextField fx:id="txtComentario" layoutX="419.0" layoutY="160.0" prefHeight="95.0" prefWidth="188.0" />
+   </children>
+</AnchorPane>

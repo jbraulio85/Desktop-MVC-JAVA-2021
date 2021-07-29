@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="250.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.LoginController">
+   <children>
+      <Label layoutX="42.0" layoutY="84.0" text="Usuario:" textFill="#ed5f05">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="28.0" layoutY="123.0" text="Password:" textFill="#ed5f05">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="txtUsuario" layoutX="127.0" layoutY="85.0" prefHeight="25.0" prefWidth="230.0" />
+      <PasswordField fx:id="txtPassword" layoutX="127.0" layoutY="128.0" prefHeight="25.0" prefWidth="230.0" />
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="297.0" layoutY="170.0" onMouseClicked="#autenticar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/password.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="300.0" layoutY="216.0" text="Ingresar" />
+   </children>
+</AnchorPane>

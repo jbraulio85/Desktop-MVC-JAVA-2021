@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.SalonController">
+   <children>
+      <TableView fx:id="tblSalon" layoutX="25.0" layoutY="14.0" prefHeight="264.0" prefWidth="554.0">
+        <columns>
+          <TableColumn fx:id="colCapacidad" prefWidth="86.0" text="Capacidad" />
+            <TableColumn fx:id="colNombreSalon" prefWidth="205.0" text="Nombre de salón" />
+            <TableColumn fx:id="colDescripcion" prefWidth="261.0" text="Descripción" />
+        </columns>
+      </TableView>
+      <Button layoutX="67.0" layoutY="313.0" mnemonicParsing="false" onAction="#mostrarVentanaSalonCU" prefHeight="25.0" prefWidth="81.0" text="Nuevo" />
+      <Button layoutX="167.0" layoutY="314.0" mnemonicParsing="false" onAction="#mostrarVentanaSalonUpdate" prefHeight="25.0" prefWidth="81.0" text="Modificar" />
+      <Button layoutX="269.0" layoutY="314.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="81.0" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="369.0" layoutY="313.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Reporte" />
+      <Button layoutX="474.0" layoutY="314.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+   </children>
+</AnchorPane>

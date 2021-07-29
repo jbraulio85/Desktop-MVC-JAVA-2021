@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="365.0" prefWidth="308.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.HorarioController">
+   <children>
+      <Label layoutX="28.0" layoutY="22.0" text="Horarios">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="6.0" fitWidth="215.0" layoutX="15.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/barra.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblHorarios" layoutX="15.0" layoutY="70.0" prefHeight="262.0" prefWidth="215.0">
+        <columns>
+          <TableColumn fx:id="colHorarios" prefWidth="206.0" text="Horarios Disponibles" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="246.0" layoutY="32.0" onMouseClicked="#nuevo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/plus.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="246.0" layoutY="68.0" text="Nuevo" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="244.0" layoutY="161.0" onMouseClicked="#eliminar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/delete.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="242.0" layoutY="194.0" onMouseClicked="#eliminar" text="Eliminar" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="244.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/document.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="240.0" layoutY="256.0" text="Reporte" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="246.0" layoutY="278.0" onMouseClicked="#regresar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/atras.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="238.0" layoutY="313.0" text="Regresar" />
+      <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="244.0" layoutY="93.0" onMouseClicked="#modificar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/edit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="244.0" layoutY="129.0" text="Editar" />
+   </children>
+</AnchorPane>

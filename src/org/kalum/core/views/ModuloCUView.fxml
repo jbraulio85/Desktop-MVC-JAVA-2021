@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="349.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.ModuloCUController">
+   <children>
+      <JFXComboBox fx:id="cmbCarrera" layoutX="130.0" layoutY="105.0" prefHeight="25.0" prefWidth="198.0" />
+      <Label layoutX="41.0" layoutY="109.0" text="Carrera">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="179.0" text="Nombre">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNombre" layoutX="130.0" layoutY="177.0" prefHeight="25.0" prefWidth="198.0" />
+      <Spinner fx:id="numSeminarios" layoutX="254.0" layoutY="259.0" prefHeight="25.0" prefWidth="78.0" />
+      <Label layoutX="41.0" layoutY="261.0" text="Cantidad de seminarios">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="48.0" layoutX="388.0" layoutY="240.0" onMouseClicked="#regresar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/atras.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="384.0" layoutY="278.0" prefHeight="17.0" prefWidth="50.0" text="Regresar" />
+      <ImageView fitHeight="42.0" fitWidth="48.0" layoutX="388.0" layoutY="166.0" onMouseClicked="#guardar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/tick.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="389.0" layoutY="204.0" prefHeight="17.0" prefWidth="50.0" text="Guardar" />
+   </children>
+</AnchorPane>

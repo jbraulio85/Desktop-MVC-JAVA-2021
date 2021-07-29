@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="298.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.HorarioCUController">
+   <children>
+      <Label layoutX="29.0" layoutY="14.0" text="Horarios">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="6.0" fitWidth="282.0" layoutX="14.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/barra.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="68.0" layoutX="205.0" layoutY="208.0" onMouseClicked="#regresar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/atras.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="97.0" prefHeight="17.0" prefWidth="106.0" text="Horario Inicio" />
+      <Label layoutX="20.0" layoutY="154.0" prefHeight="17.0" prefWidth="106.0" text="Horario final" />
+      <JFXComboBox fx:id="cmbHorarioInicio" layoutX="127.0" layoutY="93.0" prefHeight="25.0" prefWidth="165.0" promptText="Selecciona uno" unFocusColor="#f7911c" />
+      <JFXComboBox fx:id="cmbHorarioFinal" layoutX="127.0" layoutY="150.0" prefHeight="25.0" prefWidth="165.0" promptText="Selecciona uno" unFocusColor="#f7911c" />
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="89.0" layoutY="208.0" onMouseClicked="#guardar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/tick.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

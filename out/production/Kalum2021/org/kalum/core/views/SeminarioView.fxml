@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.SeminarioController">
+   <children>
+      <ImageView fitHeight="36.0" fitWidth="41.0" layoutX="518.0" layoutY="319.0" onMouseClicked="#regresar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/atras.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblSeminario" layoutX="20.0" layoutY="83.0" prefHeight="297.0" prefWidth="471.0">
+        <columns>
+          <TableColumn fx:id="colSeminario" prefWidth="127.0" text="Seminario" />
+          <TableColumn fx:id="colModulo" minWidth="8.0" prefWidth="156.0" text="Módulo" />
+            <TableColumn fx:id="colFechaInicio" minWidth="8.0" prefWidth="93.0" text="Fecha Inicio" />
+            <TableColumn fx:id="colFechaFinal" minWidth="8.0" prefWidth="93.0" text="Fecha final" />
+        </columns>
+      </TableView>
+      <Label layoutX="513.0" layoutY="355.0" text="Regresar" />
+      <ImageView fitHeight="36.0" fitWidth="41.0" layoutX="518.0" layoutY="83.0" onMouseClicked="#nuevo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/plus.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="519.0" layoutY="119.0" text="Nuevo" />
+      <ImageView fitHeight="36.0" fitWidth="41.0" layoutX="519.0" layoutY="147.0" onMouseClicked="#modificar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/edit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="511.0" layoutY="183.0" text="Modificar" />
+   </children>
+</AnchorPane>

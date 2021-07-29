@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="335.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.AlumnoCUController">
+   <children>
+      <Label layoutX="49.0" layoutY="51.0" prefHeight="26.0" prefWidth="31.0" text="Carné" />
+      <Label layoutX="51.0" layoutY="93.0" prefHeight="26.0" prefWidth="49.0" text="Apellidos" />
+      <Label layoutX="53.0" layoutY="138.0" prefHeight="26.0" prefWidth="71.0" text="Nombres" />
+      <Label layoutX="52.0" layoutY="181.0" prefHeight="26.0" prefWidth="71.0" text="Expediente" />
+      <Label layoutX="55.0" layoutY="223.0" prefHeight="26.0" prefWidth="47.0" text="Email" />
+      <TextField fx:id="txtCarne" layoutX="114.0" layoutY="51.0" prefHeight="25.0" prefWidth="321.0" />
+      <TextField fx:id="txtApellidos" layoutX="116.0" layoutY="98.0" prefHeight="25.0" prefWidth="318.0" />
+      <TextField fx:id="txtNombres" layoutX="117.0" layoutY="138.0" prefHeight="25.0" prefWidth="315.0" />
+      <TextField fx:id="txtExpediente" layoutX="116.0" layoutY="186.0" prefHeight="25.0" prefWidth="316.0" />
+      <TextField fx:id="txtEmail" layoutX="115.0" layoutY="224.0" prefHeight="25.0" prefWidth="319.0" />
+      <ImageView fitHeight="37.0" fitWidth="47.0" layoutX="388.0" layoutY="266.0" onMouseClicked="#regresar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/atras.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="383.0" layoutY="303.0" text="Regresar" />
+      <ImageView fitHeight="37.0" fitWidth="47.0" layoutX="325.0" layoutY="264.0" onMouseClicked="#guardar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/tick.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="320.0" layoutY="301.0" text="Guardar" />
+   </children>
+</AnchorPane>

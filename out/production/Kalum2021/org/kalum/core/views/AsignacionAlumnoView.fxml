@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="430.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.AsignacionAlumnoController">
+   <children>
+      <TableView fx:id="tblAsignacionAlumno" layoutX="22.0" layoutY="91.0" prefHeight="318.0" prefWidth="395.0">
+        <columns>
+          <TableColumn fx:id="colCarne" prefWidth="103.0" text="Carné" />
+          <TableColumn fx:id="colFechaAsignacion" prefWidth="138.0" text="Fecha de asignación" />
+            <TableColumn fx:id="colClase" prefWidth="153.0" text="Clase" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="15.0" fitWidth="562.0" layoutX="22.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/barra.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="29.0" prefHeight="30.0" prefWidth="377.0" text="Asignación de alumnos">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="483.0" layoutY="87.0" onMouseClicked="#ventanaAsignacionCU" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/plus.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="485.0" layoutY="126.0" text="Nuevo" />
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="483.0" layoutY="151.0" onMouseClicked="#modificar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/edit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="476.0" layoutY="190.0" text="Modificar" />
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="483.0" layoutY="224.0" onMouseClicked="#eliminar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/delete.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="480.0" layoutY="263.0" text="Eliminar" />
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="483.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/document.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="477.0" layoutY="329.0" text="Reportes" />
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="483.0" layoutY="353.0" onMouseClicked="#regresar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/atras.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="478.0" layoutY="392.0" text="Regresar" />
+   </children>
+</AnchorPane>

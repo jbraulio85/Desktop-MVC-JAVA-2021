@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="442.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.ClaseCUController">
+   <children>
+      <Label layoutX="50.0" layoutY="70.0" prefHeight="17.0" prefWidth="94.0" text="Descripción" />
+      <Label layoutX="50.0" layoutY="111.0" prefHeight="17.0" prefWidth="94.0" text="Ciclo" />
+      <Label layoutX="50.0" layoutY="154.0" prefHeight="17.0" prefWidth="94.0" text="Cupo Máximo" />
+      <Label layoutX="50.0" layoutY="200.0" prefHeight="17.0" prefWidth="94.0" text="Cupo Mínimo" />
+      <Label layoutX="50.0" layoutY="241.0" prefHeight="17.0" prefWidth="94.0" text="Carrera" />
+      <Label layoutX="50.0" layoutY="284.0" prefHeight="17.0" prefWidth="94.0" text="Horario" />
+      <Label layoutX="50.0" layoutY="326.0" prefHeight="17.0" prefWidth="94.0" text="Instructor" />
+      <Label layoutX="50.0" layoutY="369.0" prefHeight="17.0" prefWidth="94.0" text="Salón" />
+      <TextField fx:id="txtDescripcion" layoutX="163.0" layoutY="66.0" prefHeight="25.0" prefWidth="316.0" promptText="Descripción de la clase" />
+      <Spinner fx:id="numCiclo" layoutX="163.0" layoutY="107.0" prefHeight="25.0" prefWidth="173.0" />
+      <Spinner fx:id="numMaximo" layoutX="163.0" layoutY="150.0" prefHeight="25.0" prefWidth="173.0" />
+      <ComboBox fx:id="cmbCarrera" layoutX="163.0" layoutY="237.0" prefHeight="25.0" prefWidth="173.0" promptText="Seleccionar" />
+      <ComboBox fx:id="cmbHorario" layoutX="163.0" layoutY="280.0" prefHeight="25.0" prefWidth="173.0" promptText="Seleccionar" />
+      <ComboBox fx:id="cmbInstructor" layoutX="163.0" layoutY="322.0" prefHeight="25.0" prefWidth="173.0" promptText="Seleccionar" />
+      <ComboBox fx:id="cmbSalon" layoutX="163.0" layoutY="365.0" prefHeight="25.0" prefWidth="173.0" promptText="Seleccionar" />
+      <Spinner fx:id="numMinimo" layoutX="163.0" layoutY="196.0" prefHeight="25.0" prefWidth="173.0" />
+      <ImageView fitHeight="11.0" fitWidth="558.0" layoutX="14.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/barra.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="-9.0" prefHeight="17.0" prefWidth="127.0" text="Clases">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="36.0" layoutX="436.0" layoutY="343.0" onMouseClicked="#regresar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/atras.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="434.0" layoutY="275.0" onMouseClicked="#guardar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/tick.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="425.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

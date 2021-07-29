@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="431.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kalum.core.controllers.AlumnoController">
+   <children>
+      <TableView fx:id="tblAlumno" layoutX="15.0" layoutY="27.0" prefHeight="220.0" prefWidth="656.0">
+        <columns>
+          <TableColumn fx:id="colCarne" prefWidth="75.0" text="Carné" />
+          <TableColumn fx:id="colApellidos" prefWidth="129.0" text="Apellidos" />
+            <TableColumn fx:id="colNombres" prefWidth="103.0" text="Nombres" />
+            <TableColumn fx:id="colNoExpediente" prefWidth="154.0" text="No. Expediente" />
+            <TableColumn fx:id="colEmail" prefWidth="194.0" text="Email" />
+        </columns>
+      </TableView>
+      <Button layoutX="48.0" layoutY="301.0" mnemonicParsing="false" onAction="#mostrarVentanaAlumnoCU" prefHeight="25.0" prefWidth="97.0" text="Nuevo" />
+      <Button layoutX="163.0" layoutY="301.0" mnemonicParsing="false" onAction="#mostrarVentanaAlumnoUpdate" prefHeight="25.0" prefWidth="97.0" text="Modificar" />
+      <Button layoutX="276.0" layoutY="301.0" mnemonicParsing="false" onAction="#eliminarAlumno" prefHeight="25.0" prefWidth="97.0" text="Eliminar" />
+      <Button layoutX="388.0" layoutY="301.0" mnemonicParsing="false" onAction="#generarReporte" prefHeight="25.0" prefWidth="97.0" text="Reporte" />
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="599.0" layoutY="296.0" onMouseClicked="#mostrarMenuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/atras.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
